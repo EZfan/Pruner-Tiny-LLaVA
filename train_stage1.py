@@ -5,15 +5,14 @@ from model import PrunerTinyLLaVA
 from dataset import LLaVADataset, collate_fn, COCOPretrainDataset
 
 
-MODEL_ID = "D:\D11PMINDER\Pruner-Tiny-llava\local_models\qwen2.5-0.5b-instruct"
-VISION_ID = "D:\D11PMINDER\Pruner-Tiny-llava\local_models\siglip-so400m"
+MODEL_ID = "local_models\qwen2.5-0.5b-instruct"
+VISION_ID = "local_models\siglip-so400m"
 DATA_PATH = "data/captions_train2017.json"
 IMG_DIR = "data/coco/train2017"
 OUTPUT_DIR = "output_stage1"
 
 
 def train():
-    # 1. 准备组件
     tokenizer = AutoTokenizer.from_pretrained(MODEL_ID, trust_remote_code=True)
     tokenizer.pad_token = tokenizer.eos_token
 
