@@ -10,6 +10,8 @@
 Efficient Multimodal Large Language Model with Learnable Token Pruning  
 运行于 RTX 4060 Laptop 的轻量多模态模型
 
+![HybridTokenPruner 架构](pruner.png)
+
 ---
 
 ## 🚀 Overview
@@ -115,3 +117,4 @@ python train_stage2.py \
 - 感谢 LLaVA 项目提供多模态模型基础框架
 - 感谢 Qwen 团队开源轻量化语言模型
 - 感谢 SigLIP 提供高效视觉塔
+
