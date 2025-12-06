@@ -5,8 +5,8 @@ from model import PrunerTinyLLaVA
 from dataset import LLaVADataset, collate_fn
 from torch.utils.data import Subset
 
-MODEL_ID = "D:\D11PMINDER\Pruner-Tiny-llava\local_models\qwen2.5-0.5b-instruct"
-VISION_ID = "D:\D11PMINDER\Pruner-Tiny-llava\local_models\siglip-so400m"
+MODEL_ID = "local_models\qwen2.5-0.5b-instruct"
+VISION_ID = "local_models\siglip-so400m"
 DATA_PATH = "data/llava_instruct_150k.json"
 IMG_DIR = "data/coco/train2017"
 STAGE1_CKPT = "output_stage1/stage1.pt"
